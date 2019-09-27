@@ -346,6 +346,58 @@
     cursor: crosshair;
 }
 
+.topborder{
+    border-top: 5px solid black;
+    position: absolute;
+    top: 0;
+    width: 00%;
+    transition: all 0.5s ease-out;   
+}
+
+.grid3item:hover .topborder{
+    width: 100%;
+}
+
+.bottomborder{
+    border-top: 5px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 00%;
+    transition: all 0.5s ease-out;  
+}
+
+.grid3item:hover .bottomborder{
+    width: 100%;
+}
+
+.leftborder{
+    border-left: 5px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 00%;
+    transition: all 0.5s ease-out; 
+    transition-delay: 0.5s;
+}
+
+.grid3item:hover .leftborder{
+    height: 100%;
+}
+
+.rightborder{
+    border-right: 5px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 00%;
+    transition: all 0.5s ease-out; 
+    transition-delay: 0.5s;
+}
+
+.grid3item:hover .rightborder{
+    height: 100%;
+}
+
 .heart{
     padding: 10;
     position: absolute;
