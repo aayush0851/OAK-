@@ -14,6 +14,220 @@
     overflow: hidden;
 }
 
+#navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 33%;
+    background: url("files/nav_bg.jpg");
+    z-index: 1;
+    color: white;
+    height: 100%;
+    padding: 45px;
+}
+
+#container{
+    border: 1px solid white;
+    padding: 0 0 10 0px;
+    position: relative;
+}
+
+#topnav{
+    border: 1px solid white;
+    position: relative;
+    top: 0;
+    font-size: 42px;
+}
+
+#searchbox input{
+    background-color: transparent;
+    color: white;
+    font-family: courier;
+    font-size: 22;
+    border: 2px solid white;
+    border-radius: 100px;
+    position: absolute;
+    right: 50px;
+    top: 5;
+}
+
+#search{
+    position: absolute;
+    right: 07;
+    top: 0;
+    border: 1px solid red;
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+#circle{
+    border: 2px solid white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+/*{34 6  17  20  }*/
+#linex{
+    position: absolute;
+    top: 34px;
+    right: 6px;
+    border-top: 2px solid white;
+    width: 12px; 
+    transform: rotate(45deg);
+}
+
+#liney{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    opacity: 1;
+    border-top: 2px solid white;
+    width: 12px; 
+    transform: rotate(-45deg);
+}
+
+#topnav i:hover{
+    color: aquamarine;
+}
+
+/*mid nav here*/
+
+#midnav{
+    position: relative;
+    top: 60px;
+    border: 2px solid yellow;
+    margin: 3px;
+    height: 60%;
+}
+#home{
+    
+}
+
+#midnav a{
+    text-decoration: none;
+    color: red;
+}
+
+.link{
+    color: red;;
+    font-family: 'Lato';
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 3px;
+}
+
+#hiddenitem1{
+    border: 2px solid green;
+    margin: 5px;
+    font-family: courier;
+    position: absolute;
+    top: 41;
+    opacity: 0.5;
+}
+
+#hiddenitem2{
+    border: 2px solid green;
+    margin: 5px;
+    font-family: courier;
+    position: absolute;
+    top: 121;
+    opacity: 0.5;
+}
+
+#hiddenitem3{
+    border: 2px solid green;
+    margin: 5px;
+    font-family: courier;
+    position: absolute;
+    top: 161;
+    opacity: 0.5;
+}
+
+#drop1{
+    color: red;;
+    font-family: 'Lato';
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 3px;
+    position: absolute;
+    top: 0;
+}
+#drop2{
+    color: red;;
+    font-family: 'Lato';
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 3px;
+    position: absolute;
+    top: 40;
+}
+#drop3{
+    color: red;;
+    font-family: 'Lato';
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 3px;
+    position: absolute;
+    top: 80;
+}
+#drop4{
+    color: red;;
+    font-family: 'Lato';
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 3px;
+    position: absolute;
+    top: 120;
+}
+#drop5{
+    color: red;;
+    font-family: 'Lato';
+    font-size: 30px;
+    border: 1px solid white;
+    margin: 3px;
+    position: absolute;
+    top: 160;
+}
+
+#drop1 a:hover #about{
+    top: 90;
+}
+
+
+
+
+/*mid nav ends here*/
+
+
+#navcontent a:hover #navcontent2{
+     
+}
+
+#navbase{
+    border: 1px solid white;
+    margin-top: 20%;
+    
+    
+}
+
+#midnav a:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+#navbase i{
+    padding-right: 15px;
+    font-size: 22px;
+}
+
+#navbase i:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
 
 #box-1{
     position: relative;
@@ -356,6 +570,7 @@
     border-top: 5px solid black;
     position: absolute;
     top: 0;
+    z-index: 1;
     width: 00%;
     transition: all 0.5s ease-out;   
 }
@@ -369,6 +584,7 @@
     position: absolute;
     bottom: 0;
     right: -370px;
+    z-index: 1;
     width: 100%;
     transition: all 0.5s;  
 }
@@ -409,6 +625,7 @@
 .heart{
     padding: 10;
     position: absolute;
+    z-index: 1;
     top: 0;
 /*    border: 1px solid;*/
     font-family: verdana;
@@ -430,6 +647,7 @@
     letter-spacing: 1.5;
     opacity: 1;
     position: absolute;
+    z-index: 1;
     bottom: -40;
     padding-left: 7%; 
     transition: all 0.3s;
@@ -448,6 +666,7 @@
     font-family: 'verdana';
     font-size: 90%;
     padding-left: 7%; 
+    z-index: 1;
     transition: all 0.5s;
     transition-delay: 0.2s;
 }
