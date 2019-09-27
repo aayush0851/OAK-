@@ -1,0 +1,1 @@
+document.getElementById('ham1').addEventListener("click",navbar());
