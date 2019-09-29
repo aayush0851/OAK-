@@ -29,3 +29,11 @@ function fxn2()
             z++;
         }
 }
+
+document.getElementById("ham2").addEventListener("click",fxn3);
+function fxn3{
+    document.getElementById("linea").style.opacity=0;
+    document.getElementById("lineb").style.transform(rotate(45));
+    document.getElementById("linec").style.display=none;
+    document.getElementById("lined").style.opacity=0;
+}

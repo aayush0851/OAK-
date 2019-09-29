@@ -513,7 +513,7 @@
 .grid3item:hover img{
     transform: scale(1.1);
     opacity: 0.2;
-    cursor: crosshair;
+    cursor: url(files/cursor.png), auto;
 }
 
 .topborder{
