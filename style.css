@@ -103,109 +103,42 @@
     margin: 3px;
     height: 60%;
 }
-#home{
-    
-}
 
-#midnav a{
+#home,#about,#portfolio, a{
+    font-family: 'Lato';
+    font-size: 30px;
+    color: white;
     text-decoration: none;
-    color: red;
+/*    border: 3px solid white;*/
 }
 
-.link{
-    color: red;;
-    font-family: 'Lato';
-    font-size: 30px;
-    border: 1px solid white;
-    margin: 3px;
-}
-
-#hiddenitem1{
-    border: 2px solid green;
-    margin: 5px;
-    font-family: courier;
-    position: absolute;
-    top: 41;
-    opacity: 0.5;
-}
-
-#hiddenitem2{
-    border: 2px solid green;
-    margin: 5px;
-    font-family: courier;
-    position: absolute;
-    top: 121;
-    opacity: 0.5;
-}
-
-#hiddenitem3{
-    border: 2px solid green;
-    margin: 5px;
-    font-family: courier;
-    position: absolute;
-    top: 161;
-    opacity: 0.5;
-}
-
-#drop1{
-    color: red;;
-    font-family: 'Lato';
-    font-size: 30px;
-    border: 1px solid white;
-    margin: 3px;
+#home{
+/*    border: 3px solid green;*/
     position: absolute;
     top: 0;
 }
-#drop2{
-    color: red;;
-    font-family: 'Lato';
-    font-size: 30px;
-    border: 1px solid white;
-    margin: 3px;
-    position: absolute;
-    top: 40;
-}
-#drop3{
-    color: red;;
-    font-family: 'Lato';
-    font-size: 30px;
-    border: 1px solid white;
-    margin: 3px;
-    position: absolute;
-    top: 80;
-}
-#drop4{
-    color: red;;
-    font-family: 'Lato';
-    font-size: 30px;
-    border: 1px solid white;
-    margin: 3px;
-    position: absolute;
-    top: 120;
-}
-#drop5{
-    color: red;;
-    font-family: 'Lato';
-    font-size: 30px;
-    border: 1px solid white;
-    margin: 3px;
-    position: absolute;
-    top: 160;
-}
 
-#drop1 a:hover #about{
-    top: 90;
+#home:hover #about{
+    top: 78px;
+}
+#about{
+    border: 3px solid red;
+    position: absolute;
+    top: 39px;
+}
+#portfolio{
+    border: 3px solid orange;
+    position: absolute;
+    top: 78px;
 }
 
 
+#home:hover
 
 
 /*mid nav ends here*/
 
 
-#navcontent a:hover #navcontent2{
-     
-}
 
 #navbase{
     border: 1px solid white;
@@ -214,10 +147,12 @@
     
 }
 
+/*
 #midnav a:hover{
     color: aquamarine;
     cursor: pointer;
 }
+*/
 
 #navbase i{
     padding-right: 15px;
@@ -297,16 +232,15 @@
 
 
 #images{
-    width: 87%;
     animation-name: animate_image;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 }
 
 
 @keyframes animate_image{
     0% {transform: scale(1.3); opacity: 1;}
-    100% {transform: scale(1); opacity: 0;}
+    100% {transform: scale(1); opacity: 0.5;}
 }
 
 
@@ -337,11 +271,27 @@
 
 #text-2{
     position: absolute;
-    top: 55%;
+    top: 60%;
+    width: 100%;
     margin-left:6%;
     font-size: 30px;
     font-family: 'Electrolize', sans-serif;
+    border-right: 1px solid black;
+    padding: 0px;
+    animation-name: oscillate;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    overflow: hidden;
 }
+
+@keyframes oscillate{
+    0% {width: 0%;}
+    50% {width: 20%;}
+    100% {width: 0%;}
+}
+
+
 
 #box-3{
 /*    border: 1px solid black;*/
