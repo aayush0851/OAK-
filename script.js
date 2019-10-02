@@ -34,6 +34,8 @@ function fxn5(){
     
             document.getElementById("liney").style.opacity=1;
             
+            document.getElementById("circle").style.opacity=0;
+            
             btn="close";
         }
     
@@ -50,11 +52,37 @@ function fxn5(){
             document.getElementById("liney").style.right=5;
     
             document.getElementById("liney").style.opacity=0;
+            document.getElementById("circle").style.opacity=1;
             
             btn="open";
         }
             
             
+}
+
+function fxn6(){
+   
+    if(btn=="open")
+        {
+            document.getElementById("abx").style.left=150;
+            
+            document.getElementById("abx").style.opacity=1;
+            
+            
+            btn="close";
+        }
+    
+    else if(btn=="close")
+        
+        {
+         
+             document.getElementById("abx").style.left=-370;
+            
+            document.getElementById("abx").style.opacity=0;
+            
+            
+            btn="open";
+        }
 }
 
 
@@ -91,7 +119,6 @@ function fxn2()
             z++;
         }
 }
-
 
 
 

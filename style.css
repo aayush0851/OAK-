@@ -9,7 +9,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-/*    background-color: aquamarine;*/
     width: 90%;
     overflow: hidden;
 }
@@ -17,7 +16,7 @@
 #navbar{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -510;
     width: 33%;
     background: url("files/nav_bg.jpg");
     z-index: 1;
@@ -29,13 +28,11 @@
 }
 
 #container{
-/*    border: 1px solid white;*/
     padding: 0 0 10 0px;
     position: relative;
 }
 
 #topnav{
-/*    border: 1px solid white;*/
     position: relative;
     top: 0;
     font-size: 42px;
@@ -53,23 +50,17 @@
     width: 30px;
     opacity: 0;
     top: 5;
-    transition: width 0.5s, opacity 0.2s;
-/*
-    transition: width 0.5s;
-    opacity: 0;
-*/
+    transition: width 0.5s, opacity 0.5s;
 }
 
 #search{
     position: absolute;
     right: 0px;
     top: 0;
-/*    border: 1px solid red;*/
     display: block;
     height: 40px;
     width: 40px;
-/*    overflow: hidden;*/
-/*    background-color: green;*/
+    cursor: pointer;
 }
 
 #circle{
@@ -80,6 +71,8 @@
     position: absolute;
     top: 4px;
     left: 0px;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 /*{34 6  17  20  }*/
 #linex{
@@ -101,19 +94,17 @@
     border-top: 2px solid white;
     width: 12px; 
     transform: rotate(-45deg);
-    transition: all 0.5s;
+    transition: top 0.5s,right 0.5s, opacity 0.2s;
 }
 
 #topnav i:hover{
     color: aquamarine;
+    cursor: pointer;
 }
-
-/*mid nav here*/
 
 #midnav{
     position: relative;
     top: 60px;
-/*    border: 2px solid yellow;*/
     margin: 3px;
     height: 50%;
 }
@@ -123,36 +114,26 @@
     font-size: 30px;
     color: white;
     text-decoration: none;
-/*    border: 3px solid white;*/
 }
 
 #home{
-/*    border: 3px solid green;*/
     position: absolute;
     top: 0;
 }
-/*
-#home:hover #about{
-    top: 78px;
-}
-*/
+
 #about{
-/*    border: 3px solid red;*/
     position: absolute;
     top: 38px;
 }
 #portfolio{
-/*    border: 3px solid orange;*/
     position: absolute;
     top: 78px;
 }
 #contact1{
-/*    border: 3px solid orange;*/
     position: absolute;
     top: 160px;
 }
 #blogoverlay{
-/*    border: 3px solid orange;*/
     position: absolute;
     top: 118px;
 }
@@ -161,22 +142,10 @@ a:hover{
     color: aquamarine;
 }
 
-/*mid nav ends here*/
-
-
-
 #navbase{
-/*    border: 1px solid white;*/
     margin-top: 20%;
     
 }
-
-/*
-#midnav a:hover{
-    color: aquamarine;
-    cursor: pointer;
-}
-*/
 
 #navbase i{
     padding-right: 15px;
@@ -193,7 +162,6 @@ a:hover{
     top: 30px;
     display: block;
     padding: 10 0 10 0px;
-/*    border: 1px solid black;*/
 }
 
 
@@ -213,7 +181,6 @@ a:hover{
     transition: all 0.2s;
 }
 
-
 #line2{
     border-bottom: 3px solid black;
     border-radius: 5px;
@@ -231,27 +198,22 @@ a:hover{
     transition: all 0.2s;
 }
 
-
 #ham1:hover #line1{
     margin-top: 8px;
 }
 
-
 #ham1:hover #line2{
     margin-top: 7px;
 }
-
 
 #ham1:hover #line3{
     margin-top: 7px;
 }
 
 #box-2{
-/*    border: 1px solid black;*/
     overflow: hidden;
     position: relative;
     margin-top: 7%;
-/*    height: 100%;*/
 }
 
 
@@ -272,7 +234,6 @@ a:hover{
     position: absolute;
     top: 40%;
     margin-left: 6%;
-/*    border: 1px solid black;*/
     width: auto;
     font-size: 50px;
 }
@@ -318,7 +279,6 @@ a:hover{
 
 
 #box-3{
-/*    border: 1px solid black;*/
     margin-top: 5%;
     position: relative;
 }
@@ -362,7 +322,6 @@ a:hover{
 }
 
 .text-4{
-/*    border: 1px solid black;*/
     margin-top: 5%;
 }
 .text-4a{
@@ -380,15 +339,20 @@ a:hover{
     font-weight: bold;
 }
 
+#selectlst{
+    margin-top: 4%;
+    display: flex;
+    flex: wrap;
+    align-items: center;
+}
+
 #ham2{
     background-color: aquamarine;
-/*    border: 1px solid grey;*/
-    margin-top: 4%;
     padding: 1.5%;
     display: inline-block;
     overflow: hidden;
     position: relative;
-/*    height: 6%;*/
+    cursor: pointer;
 }
 
 #linea{
@@ -398,8 +362,6 @@ a:hover{
     margin-top: 0%;
     position: absolute;
     top: 16px;
-/*    left: 23%;*/
-/*    margin-top: 10px; */
     transition: all 0.5s;
     
 }
@@ -409,46 +371,46 @@ a:hover{
     border-radius: 5px;
     width: 30px;
     margin-top: 9px;
-/*
-    position: absolute;
-    top: 22px;
-    left: 23%;
-*/
-/*    margin-top: 5px;*/
     transition: all 0.5s;
 }
-
-
-
 
 #linec{
     border-bottom: 3px solid black;
     border-radius: 5px;
     width: 30px;
     margin-top: 8px;
-/*
-    position: absolute;
-    top: 32px;
-    left: 23%;
-*/
-/*    margin-top: 5px;*/
     transition: all 0.5s;
-    
 }
 
 #lined{
     border-bottom: 3px solid black;
     border-radius: 5px;
     width: 30px;
-/*    margin-top: 4px;*/
-    
     position: absolute;
     top: 48px;
-/*    left: 23%;*/
     opacity: 0;
-/*    margin-top: 5px;*/
     transition: all 0.5s;
     
+}
+
+ul{
+    list-style-type: none;
+    position: absolute;
+    left: -370px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+li{
+    display: inline;
+    font-family: 'Lato';
+    font-size: 120%;
+    padding-left: 20px; 
+}
+
+li:hover{
+    color: aquamarine;
+    cursor: pointer;
 }
 
 #ham2:hover #linea{
@@ -471,10 +433,8 @@ a:hover{
 }
 
 #box-4{
-/*    border: 1px solid black;*/
     margin-top: 5%;
 }
-
 
 .grid2{
     display: grid;
@@ -503,7 +463,6 @@ a:hover{
     font-weight: bold;
     font-family: 'Lato';
     margin-top: 5%;
-/*    display: flex;*/
     font-size: 120%;
     letter-spacing: 1.5;
 }
@@ -512,16 +471,14 @@ a:hover{
     font-family: 'Roboto Mono';
     margin-top: 3%;
     font-size: 90%;
-/*    display: flex;*/
     color: gray;
 }
 
 .grid3{
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 10%;
+    margin-top: 5%;
     grid-gap: 2%;
-/*    border: 1px solid black;*/
 }
 
 .grid3item{
@@ -626,7 +583,6 @@ a:hover{
     padding-left: 7%; 
     transition: all 0.3s;
     transition-delay: 0.1s;
-/*    transition-delay: 0;*/
 }
 
 .grid3item:hover .stylefashion{
@@ -636,7 +592,6 @@ a:hover{
 .newbagstyle{
     position: absolute;
     bottom: -20;
-/*    border: 1px solid white;*/
     font-family: 'verdana';
     font-size: 90%;
     padding-left: 7%; 
@@ -654,7 +609,6 @@ a:hover{
     display: block;
     text-align: center;
     font-size: 420%;
-/*    border: 1px solid black;*/
 }
 
 #reload i:hover {
@@ -664,7 +618,6 @@ a:hover{
 .grid4{
     display: block;
     grid-template-columns: auto auto;
-/*    border: 1px solid black;*/
     margin-top: 5%;
     height: 30%;
     position: relative;
@@ -698,8 +651,6 @@ a:hover{
     display: inline-block;
     width: 50%;
     background-color: black;
-    
-/*    border: 50px solid black;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -711,7 +662,6 @@ a:hover{
     width: 70%;
     background-color: white;
     border: 1px solid black;
-/*    border: 50px solid black;*/
     position: absolute;
     top: 50%;
     right: 50%%;
@@ -741,47 +691,25 @@ a:hover{
 
 #footer{
     margin-top: 7%;
-/*    border: 1px solid black;*/
     padding-top: 6%;
     padding-bottom: 4%;
     display: flex;
-/*    grid-template-columns: auto auto auto;*/
     background-color: lightgray;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 #address{
-/*    border: 1px solid black;*/
-/*
-    display: inline-block;
-    width: 30%;
-    margin-left: 0.5%;
-*/
     display: inline-block;
     width: 30%;
     text-align: left;
-/*    display: flex;*/
-/*
-    position: absolute;
-    top: 35%;
-    left: 7%;
-*/
 }
 
 
 #links_fafa{
-/*    border: 1px solid black;*/
     display: inline-block;
     width: 40%;
     text-align: center;
-/*    display: flex;*/
-/*
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-*/
 }
 
 #links_fafa i{
@@ -794,16 +722,9 @@ a:hover{
 }
 
 #contact{
-/*    border: 1px solid black;*/
     width: 30%;
     display: inline-block;
     text-align: right;
-/*    display: flex;*/
-/*
-    position: absolute;
-    right: 7;
-    top: 35%;
-*/
 }
 
 .desnew{
