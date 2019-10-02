@@ -24,22 +24,24 @@
     color: white;
     height: 100%;
     padding: 45px;
+    z-index: 5;
+    transition: right 0.5s;
 }
 
 #container{
-    border: 1px solid white;
+/*    border: 1px solid white;*/
     padding: 0 0 10 0px;
     position: relative;
 }
 
 #topnav{
-    border: 1px solid white;
+/*    border: 1px solid white;*/
     position: relative;
     top: 0;
     font-size: 42px;
 }
 
-#searchbox input{
+#searchbox{
     background-color: transparent;
     color: white;
     font-family: courier;
@@ -47,18 +49,27 @@
     border: 2px solid white;
     border-radius: 100px;
     position: absolute;
-    right: 50px;
+    right: 03%;
+    width: 30px;
+    opacity: 0;
     top: 5;
+    transition: width 0.5s, opacity 0.2s;
+/*
+    transition: width 0.5s;
+    opacity: 0;
+*/
 }
 
 #search{
     position: absolute;
-    right: 07;
+    right: 0px;
     top: 0;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
     display: block;
     height: 40px;
     width: 40px;
+/*    overflow: hidden;*/
+/*    background-color: green;*/
 }
 
 #circle{
@@ -78,16 +89,19 @@
     border-top: 2px solid white;
     width: 12px; 
     transform: rotate(45deg);
+    z-index: 3;
+    transition: all 0.5s;
 }
 
 #liney{
     position: absolute;
     top: 3px;
     right: 5px;
-    opacity: 1;
+    opacity: 0;
     border-top: 2px solid white;
     width: 12px; 
     transform: rotate(-45deg);
+    transition: all 0.5s;
 }
 
 #topnav i:hover{
@@ -99,9 +113,9 @@
 #midnav{
     position: relative;
     top: 60px;
-    border: 2px solid yellow;
+/*    border: 2px solid yellow;*/
     margin: 3px;
-    height: 60%;
+    height: 50%;
 }
 
 #home,#about,#portfolio, a{
@@ -117,33 +131,43 @@
     position: absolute;
     top: 0;
 }
-
+/*
 #home:hover #about{
     top: 78px;
 }
+*/
 #about{
-    border: 3px solid red;
+/*    border: 3px solid red;*/
     position: absolute;
-    top: 39px;
+    top: 38px;
 }
 #portfolio{
-    border: 3px solid orange;
+/*    border: 3px solid orange;*/
     position: absolute;
     top: 78px;
 }
+#contact1{
+/*    border: 3px solid orange;*/
+    position: absolute;
+    top: 160px;
+}
+#blogoverlay{
+/*    border: 3px solid orange;*/
+    position: absolute;
+    top: 118px;
+}
 
-
-#home:hover
-
+a:hover{
+    color: aquamarine;
+}
 
 /*mid nav ends here*/
 
 
 
 #navbase{
-    border: 1px solid white;
+/*    border: 1px solid white;*/
     margin-top: 20%;
-    
     
 }
 
