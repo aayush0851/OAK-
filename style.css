@@ -451,10 +451,6 @@ li:hover{
     border-radius: 5px;
 }
 
-.grid2item:hover{
-    box-shadow: 1px 1px 5px 0px black;
-}
-
 .icon{
     font-size: 300%;
 }
