@@ -16,7 +16,7 @@
 #navbar{
     position: fixed;
     top: 0;
-    right: -510;
+    right: -700;
     width: 33%;
     background: url("files/nav_bg.jpg");
     z-index: 1;
@@ -247,7 +247,7 @@ a:hover{
 
 #text-1b{
     font-family: 'Josefin Slab', serif;
-    background-color: orange;
+    background-color: aquamarine;
     letter-spacing: 4;
     display: inline-block;
     padding: 8 8 0 0px;
@@ -452,7 +452,7 @@ li:hover{
 }
 
 .grid2item:hover{
-    box-shadow: 3px 3px 20px 0px black;
+    box-shadow: 1px 1px 5px 0px black;
 }
 
 .icon{
