@@ -478,6 +478,7 @@ li:hover{
 }
 
 .grid3item{
+    width: fit-content;
     overflow: hidden;
     background-color: aquamarine;
     position: relative;
